@@ -18,7 +18,7 @@ Inicio
    leia(numGosto)
    se numGosto = 1 entao
       gosto <- "Rap"
-   senao
+      senao
         se numGosto = 2 entao
            gosto <- "Reggae"
            senao
@@ -31,7 +31,9 @@ Inicio
                 fimse
         fimse
    fimse
+   
    escreval("Para o estilo musical ",numGosto,", temos as opcoes:")
+
    escolha numGosto
            caso 1
                 escreval("Nocivo, Sid, Mv Bill")
