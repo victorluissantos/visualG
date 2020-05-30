@@ -34,8 +34,10 @@ Inicio
    escreval("===>Resultado<===")
    se media >= 5.0 entao
       se media >= 7.0 entao
+         MudaCor("Verde","Frente")
          escreval("Aprovado")
       senao
+           MudaCor("Amarelo","Frente"
            escreval("em Recuperacao")
            // Calcula a nota minima a ser tirada na recuperacao
            // para que seja aprovado
@@ -44,6 +46,7 @@ Inicio
            
       fimse
    senao
+        MudaCor("Vermelho","Frente"
         escreval("Reprovado")
    fimse
 Fimalgoritmo

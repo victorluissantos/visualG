@@ -12,7 +12,7 @@ Var
    nome : caracter
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
-   MudaCor("Azul","Frente"
+   MudaCor("Azul","Frente")
    MudaCor("Brando","Fundos")
    escreva("Qual seu nome")
    leia(pos(nome))

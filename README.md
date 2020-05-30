@@ -1,5 +1,7 @@
-##Curso de Algoritmo##
+## Curso de Algoritmo ##
 
+Requisitos:
+https://visualg3.com.br/baixe-o-visualg-3-0-7/
 
 <table>
 	<tr>
