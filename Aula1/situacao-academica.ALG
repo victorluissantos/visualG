@@ -1,5 +1,9 @@
 Algoritmo "Situacao Academica"
-// 
+// Exercicio:
+// 1 -> Perguntar qual a media requerida
+// 2 -> Perguntar qual a media requerida para recuperacao
+// 3 -> Realizar o calculo da linha 39 a partir da variavel informada
+// 4 -> Realizar o calculo da linha 48 a partir da variavel informada
 //  
 // Descrição   : Informa se esta aprovado, reprovado ou tem chance de recuperacao
 // Autor(a)    : Santos L. Victor [victor.santos@clansoftware.com.br]
