@@ -3,6 +3,15 @@
 Requisitos:
 https://visualg3.com.br/baixe-o-visualg-3-0-7/
 
+Primeira aula:
+Tipo de variaveis, entrada de dados [leia()] e operacoes matemticas basicas.
+Segunda aula:
+Loop basico loop, operacoes matematicas em modulos (avg[])
+Terceira aula:
+Array vetorial
+Quarta aula:
+bblocos de codigos funcoes
+
 <table>
 	<tr>
 		<td colspan="2">Professor/Instrutor</td>
