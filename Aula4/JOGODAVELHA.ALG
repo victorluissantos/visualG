@@ -2,7 +2,7 @@ Algoritmo "jogodavelha"
 //  
 //
 // Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
+// Autor(a)    : Santos L. Victor
 // Data atual  : 20/06/2020
 
 Var
@@ -11,6 +11,7 @@ Var
    linha,coluna: inteiro
    fim:logico
    jogadal, jogadac:inteiro
+   nomeJogador, resultado:caracter
    
 Procedimento desenhaTabuleiro
    Inicio
@@ -22,10 +23,25 @@ Procedimento desenhaTabuleiro
              se (linha=1) e (tabuleiro[coluna, linha]<>"-") entao
                 se (tabuleiro[coluna, linha]=tabuleiro[coluna, linha-1]) e (tabuleiro[coluna, linha]=tabuleiro[coluna, linha+1]) entao
                    fim<-Verdadeiro
+                   se tabuleiro[coluna,linha]="O" entao
+                      resultado<-"Detonator e o ganhador"
+                   senao
+                      resultado<-"O jogador "+  nomeJogador+" e o ganhador"
+                   fimse
+                fimse
+             fimse
+             
+             se (coluna=1) e (tabuleiro[coluna, linha]<>"-") entao
+                se (tabuleiro[coluna, linha]=tabuleiro[coluna-1, linha]) e (tabuleiro[coluna, linha]=tabuleiro[coluna+1, linha]) entao
+                   fim<-Verdadeiro
+                   se tabuleiro[coluna,linha]="O" entao
+                      resultado<-"Detonator e o ganhador"
+                   senao
+                      resultado<-"O jogador "+nomeJogador+" e o ganhador"
+                   fimse
                 fimse
              fimse
          fimpara
-
          escreval()
       fimpara
       escreval("_____________")
@@ -50,7 +66,11 @@ FimProcedimento
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
    fim<-Falso
+   resultado<-"Impate geral"
    escreval("===> Jogo da velha Turbo <===")
+   escreval()
+   escreval("Hey desafiador, diga-nos teu nome:")
+   leia(nomeJogador)
    escreval()
 
    para coluna de 0 ate 2 faca
@@ -70,7 +90,7 @@ Inicio
        leia(jogadac)
        jogadac<-jogadac-1
 
-       se (tabuleiro[jogadac, jogadal]="X") ou (tabuleiro[jogadac,jogadal]="O") entao
+       se (tabuleiro[jogadal, jogadac]="X") ou (tabuleiro[jogadal,jogadac]="O") entao
            escreval("Posicao ja ocupada")
        senao
            tabuleiro[jogadal, jogadac]<-"X"
@@ -80,5 +100,8 @@ Inicio
        jogadaDetonator()
        desenhaTabuleiro()
    fimenquanto
+   
+   // exibe quem foi o ganhador
+   escreval(resultado)
     
 Fimalgoritmo
